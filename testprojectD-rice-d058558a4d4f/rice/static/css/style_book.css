@@ -1,0 +1,47 @@
+/*css reset*/
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul, img {
+    margin: 0;
+    padding: 0;
+}
+.error{
+    color:red;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+
+}
+label{
+    margin-top: 5px;
+}
+html {
+    font-size: 12px
+}
+
+h2, h4 {
+    text-align: center;
+}
+#formBox{
+    padding: 0;
+    margin: 0;
+    text-align:center;
+}
+#sonFormBox{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.form-control{
+    text-align: center;
+    width: 24rem;
+}
+#bookBtn{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40rem;
+    margin: auto;
+    text-align: center;
+    width: 19rem;
+    background-color: #eeeeee;
+}
