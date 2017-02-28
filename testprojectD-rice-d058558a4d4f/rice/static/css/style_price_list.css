@@ -1,0 +1,37 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul, img, div {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+}
+
+#boxDad {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#tableBox {
+    display: inline-block;
+}
+
+#riceTable {
+    text-align: center;
+    height: 5rem;
+    width: 24rem;
+    font-size: 1rem;
+    border: solid 0.1rem;
+}
+
+th {
+    border: solid 0.1rem;
+    border-color: #000000;
+    text-align: center;
+}
+
+td {
+    border: solid 0.1rem;
+    border-color: #000000;
+
+}

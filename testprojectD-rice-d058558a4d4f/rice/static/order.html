@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style_order.css">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/messages_zh.js"></script>
+    <script src="js/order.js"></script>
+
+    <title>大宗订单</title>
+</head>
+<body>
+<ol class="breadcrumb">
+    <li id="manager" class="active" style="color: #000000"></li>
+    <li class="active">大宗订单</li>
+    <li><a href="upgrade.html">产品价格单</a></li>
+    <li><a href="password.html">修改密码</a></li>
+    <li><a id="exitLogin" href="login.html">退出登录</a></li>
+
+</ol>
+<p>&emsp;<span>客服电话：</span><span id="serviceNow"></span>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <button id="changePhone" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        修改客服电话
+    </button>
+</p>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                        style="width: 72px ;height: 24px">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    客服电话
+                </h4>
+            </div>
+            <form id="phoneForm">
+                <div id="phoneBody" class="modal-body">
+                    <label for="newServicePhone" class="col-sm-2 control-label" style="display: block">手机号*:</label>
+                    <input id="newServicePhone" name="newServicePhone" class="form-control" style="width: 200px"
+                           maxlength="11">
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="关闭">
+                    <input id="phoneChange" type="submit" class="btn btn-primary" value="提交">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div id="PageBox">
+    <div id="orderBox"></div>
+    <p class="pageP"></p>
+
+    <div id="pagesGroup"></div>
+</div>
+
+</body>
+</html>

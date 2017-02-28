@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1 user-scalable=no">
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/messages_zh.js"></script>
+    <script src="js/book.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style_book.css" rel="stylesheet">
+    <title>预订</title>
+</head>
+<body>
+<h2>欢迎大宗预订</h2>
+
+<h4>提交后2小时联系您</h4>
+
+<div id="formBox">
+    <div id="sonFormBox">
+        <form id="bookForm">
+            <div class="formLabel">
+                <label class="bookLabel" for="productName">产品名*&emsp;</label>
+            </div>
+            <input type="text" id="productName" placeholder="请填写米的种类" name="productName" class="form-control"
+                   required><br>
+            <div class="formLabel">
+                <label class="bookLabel" for="buyerPrice">心理价位（元/斤）*</label>
+            </div>
+            <input type="text" id="buyerPrice" placeholder="元/斤" name="buyerPrice" class="form-control" required><br>
+
+            <div class="formLabel">
+                <label class="bookLabel" for="amount">订购量 (吨)*</label>
+            </div>
+            <input type="text" id="amount" placeholder="2吨起购/以吨计" name="amount" class="form-control" required><br>
+            <div class="formLabel">
+                <label class="bookLabel" for="buyerName">您的姓名*</label>
+            </div>
+            <input type="text" id="buyerName" name="buyerName" class="form-control" required><br>
+            <div class="formLabel">
+                <label class="bookLabel" for="telephone">常用手机*</label>
+            </div>
+            <input type="tel" id="telephone" name="telephone" maxlength="11" class="form-control" required><br>
+            <input id="bookBtn" class="btn btn-default" type="submit" value="提交预订">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
